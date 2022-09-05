@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/*font-family: 'Poppins', sans-serif;*/
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #E5E5E5;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+.container{
+    position: relative;
+    background-color:#141A41 ;
+    width: 400px;
+    height: 550px;
+    margin:auto;
+    margin-top: 25px;
+    border-radius: 11px;
+}
+.innerdiv{
+    position: absolute;
+    /*background-color: #ffffff;*/
+    background: rgb(190,212,255);
+    background: radial-gradient(circle, rgba(190,212,255,1) 21%, rgba(248,250,255,1) 78%);
+    width: 500px;
+    height: 400px;
+    border-radius: 24px;
+    top: 75px;
+    left: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.innerdiv div:nth-child(1)>a{
+    color:#141A41;
+    font-size: 20px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+.innerdiv .circle{
+    width: 112px;
+    height: 112px;
+    background-color:#141A41 ;
+    border-radius: 50%;
+}
+.innerdiv .circle img{
+    width: 112px;
+    height: 112px;
+    margin: 10px;
+    border-radius: 50%;
+} 
+.innerdiv .cardtext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+.innerdiv .cardtext p:first-child{
+    font-weight: bold;
+    font-size: 18px ;
+    color: #141A41;
+}
+.innerdiv .cardtext .fa-location-dot{
+    color: #141A41;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.innerdiv .cardtext p:last-child{
+    font-size: 14px;
+    color: #000000;
+    margin-top: 0px;
+}
+.innerdiv div:nth-child(4){
+    background-color: #141A41;
+    border: 0;
+    border-radius:30px ;
+    width: 126px;
+    height: 37px;
+    padding:8px 16px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.innerdiv div:nth-child(4)>button{
+    background-color: #141A41;
+    font-size: 14px;
+    color: #ffffff;
+    border: 0;
+    width: 126px;
+    height: 37px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 300px;
+        height: 500px;
+        margin:auto;
+        margin-top: 45px;
+    }
+    .innerdiv{
+        width: 400px;
+        height: 350px;
+        top: 75px;
+        left: -50px;
+        
+    }
+  }
